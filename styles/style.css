@@ -215,16 +215,6 @@
   gap: 20px;
 }
 
-@media (width < 768px) {
-  .section-what {
-    gap: 0px;
-  }
-
-  .section-what .content__section-text {
-    margin-block-start: 20px;
-  }
-}
-
 @media (width >= 768px) {
   .content__section {
     grid-template-columns: repeat(3, 1fr);
