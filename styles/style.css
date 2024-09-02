@@ -206,8 +206,8 @@
   }
 }
 
-.section-why article:not(:last-of-type) {
-  margin-block-end: 20px;
+.section-two-columns .content__section-text article:not(:first-of-type) .content__section-text-heading {
+  margin-block-start: 20px;
 }
 
 .content__section {
@@ -230,27 +230,15 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section-why {
+  .section-two-columns {
     grid-template-columns: 1fr 2fr;
   }
 
-  .section-why .content__section-title {
+  .section-two-columns .content__section-title {
     grid-column: 1 / span 1;
   }
 
-  .section-why .content__section-text {
-    grid-column: 2 / span 1;
-  }
-
-  .section-how {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .section-how .content__section-title {
-    grid-column: 1 / span 1;
-  }
-
-  .section-how .content__section-text {
+  .section-two-columns .content__section-text {
     grid-column: 2 / span 1;
   }
 }
@@ -262,15 +250,12 @@
 }
 
 @media (width >= 1024px) {
-  .section-why,
-  .section-how {
+  .section-two-columns {
     gap: 12px;
   }
 
-  .section-what .paragraph-multitask,
-  .section-what .paragraph-food,
-  .section-what .paragraph-gadgets {
-    grid-row-start: 2;
+  .section-what .content__section-text:first-of-type {
+    grid-column: 1 / span 1;
   }
 }
 
